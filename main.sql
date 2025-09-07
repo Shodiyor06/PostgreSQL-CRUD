@@ -4,7 +4,7 @@ CREATE TABLE books (
     id SERIAL PRIMARY KEY,
     title VARCHAR(100),
     author VARCHAR(50),
-    price INT(6,2),
+    price NUMERIC(6,2),
     is_available BOOLEAN DEFAULT TRUE
 );
 INSERT INTO books (title, author, price) VALUES
